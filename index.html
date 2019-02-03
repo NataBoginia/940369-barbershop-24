@@ -19,9 +19,11 @@
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
-      <!--  <button type="button" class="header-button">Вход</button>-->
+
       <ul class="user-navigation">
-        <li class="login-link">Вход</li>
+        <li>
+          <a class="login-link" href="login.html">Вход</a>
+        </li>
       </ul>
       </nav>
     </header>
@@ -64,7 +66,9 @@
       <section class="gallery">
         <h2>Фотогалерея</h2>
         <figure class="gallery-content">
-          <a href="#"><img src="img/interior-photo-1.jpg" alt="Интерьер" width="286" height="164"></a>
+          <a href="#">
+            <img src="img/interior-photo-1.jpg" alt="Интерьер барбершопа Бородинский" width="286" height="164">
+          </a>
         </figure>
 
         <button class="gallery-backward" type="button">Назад</button>
@@ -90,7 +94,25 @@
       <section class="appointments">
         <h2>Записаться</h2>
         <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-        <!--Здесь будет форма-->
+        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+          <p  class="appointment-item">
+            <label for="appointment-date">Дата</label>
+            <input type="text" id="appointment-date" name="date" value="" placeholder="2017-10-08">
+          </p>
+          <p  class="appointment-item">
+          <label for="appointment-time">Время</label>
+          <input type="text" id="appointment-time" name="time" value="" placeholder="10:00">
+          </p>
+          <p  class="appointment-item">
+            <label for="appointment-name">Ваше имя</label>
+            <input type="text" id="appointment-name" name="person" value="" placeholder="Борода">
+          </p>
+          <p  class="appointment-item">
+            <label for="appointment-phone">Телефон</label>
+            <input type="tel" id="appointment-phone" name="phone" value="" placeholder="+7 123 456-78-90">
+          </p>
+          <button type="submit" name="button">Отправить</button>
+        </form>
       </section>
     </main>
 
@@ -104,9 +126,9 @@
       <div class="footer-social">
         <b>Давайте дружить!</b>
         <ul>
-          <li><a class="social-vk" href="vk.com">Вконтакте</a></li>
-          <li><a class="social-fb" href="facebook.com">Фейсбук</a></li>
-          <li><a class="social-inst" href="instagram.com">Инстаграм</a></li>
+          <li><a class="social-vk" href="vk.com">Барбершоп во Вконтакте</a></li>
+          <li><a class="social-fb" href="facebook.com">Барбершоп в Фейсбуке</a></li>
+          <li><a class="social-inst" href="instagram.com">Барбершоп в Инстаграм</a></li>
         </ul>
       </div>
       <p class="footer-copyright">
@@ -119,14 +141,31 @@
     <section class="popup-login">
       <h2 class="login-header">Личный кабинет</h2>
       <p>Введите свой логин и пароль</p>
-      <!--Здесь будет форма-->
-      <button class="login-close" type="button">Х</button>
+      <form class="login-form" action="https://ech.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="login-user">Логин</label>
+          <input class="login-user" id="login-user" type="text" name="login" value="" placeholder="Логин">
+        </p>
+        <p>
+          <label class="visually-hidden" for="login-password">Пароль</label>
+          <input class="login-password" id="login-password" type="password" name="password" value="" placeholder="Пароль">
+        <p class="appointment-info">
+          <label class="login-checkbox">
+            <input type="checkbox" name="remember" value="">
+            Запомните меня
+          </label>
+          <a class="restore" href="#">Я забыл пароль!</a>
+        </p>
+        <button class="button" type="submit" name="button">Войти</button>
+      </form>
+      <button class="login-close" type="button">Закрыть</button>
     </section>
 
     <section class="popup-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <img class="map-image" src="img/map.jpg" alt="Карта" width="766" height="560">
-      <button class="login-close" type="button">Х</button>
+      <img class="map-image" src="img/map.jpg"
+      alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="766" height="560">
+      <button class="login-close" type="button">Закрыть</button>
     </section>
 
   </body>
