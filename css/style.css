@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", "Arial Narrow", sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  color: #ffffff;
+
+
+  background-color: #000000;
+  background-image: url("../img/background.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+a{
+  text-decoration: none;
+}
+
+.main-header{
+  color: #ffffff;
+
+  background-color: #000000;
+}
+
+.site-navigation,
+.user-navigation{
+  font-size: 16px;
+  line-height: 20px;
+
+  list-style: none;
+}
+
+.site-navigation a:hover,
+.site-navigation a:active,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:active,
+.user-navigation a:focus{
+  color: #ffffff;
+
+  background-color: #1f1f1f;
+}
+
+.features-list{
+  text-align: center;
+
+  list-style: none;
+}
+
+.features-list h3{
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.index-columns{
+  color: #000000;
+
+  background-color: #ebe8e5;
+}
+
+.index-columns h2{
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.news-items{
+  list-style: none;
+}
+
+.news-items time{
+  text-transform: none;
+}
+
+
+.button{
+  font: inherit;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: #000000;
+  border: 0;
+}
+
+.button:hover,
+.button:active{
+  color: #ffffff;
+
+  background-color: #663b0d;
+}
+
+.gallery img{
+  border-width: 7px;
+  border-color: #ffffff;
+}
+
+
+.appointments input,
+.popup-login input{
+  text-transform: uppercase;
+
+  background-color: rgba(0, 0, 0, 0);
+  border-width: 2px;
+  border-color: #000101;
+}
+
+.appointments input:active,
+.appointments input:hover{
+  border-color: #663d15;
+}
+
+.main-footer{
+  color: #ffffff;
+
+  background-color: #000000;
+  background-image: url("../img/footer.jpg");
+}
+
+.main-footer .footer-map,
+.popup-login a{
+  text-decoration: underline;
+}
+
+.main-footer .footer-map:hover,
+.popup-login a:hover{
+  text-decoration: none;
+}
+
+
+.main-footer ul{
+  list-style: none;
+}
+
+.footer-copyright .copyright-link:active,
+.footer-copyright .copyright-link:hover{
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.popup-login{
+  color: #000000;
+
+  background-color: #f8f5f2;
+}
+
+.popup-login h2{
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.popup-map{
+  background-color: #f8f5f2;
+}
