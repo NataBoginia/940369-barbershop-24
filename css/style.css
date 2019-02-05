@@ -2,9 +2,10 @@ body {
   margin: 0;
   padding: 0;
 
+  font-family: "PT Sans Narrow", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
-  font-family: "PT Sans Narrow", "Arial Narrow", sans-serif;
+  font-weight: 700;
   text-align: left;
   text-transform: uppercase;
   color: #ffffff;
@@ -12,146 +13,217 @@ body {
 
   background-color: #000000;
   background-image: url("../img/background.jpg");
-  background-position: top;
+  background-position: top center;
   background-repeat: no-repeat;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-.main-header{
+.main-header {
+  font-size: 16px;
+  line-height: 20px;
   color: #ffffff;
 
   background-color: #000000;
 }
 
 .site-navigation,
-.user-navigation{
-  font-size: 16px;
-  line-height: 20px;
-
+.user-navigation {
   list-style: none;
 }
 
+.site-navigation a,
+.user-navigation a {
+  color: #ffffff;
+}
+
 .site-navigation a:hover,
-.site-navigation a:active,
 .site-navigation a:focus,
 .user-navigation a:hover,
-.user-navigation a:active,
 .user-navigation a:focus{
   color: #ffffff;
 
   background-color: #1f1f1f;
 }
 
-.features-list{
-  text-align: center;
-
+.features-list {
   list-style: none;
 }
 
-.features-list h3{
+.features-item{
+  text-align: center;
+}
+
+.features-list h3 {
   font-size: 30px;
   line-height: 42px;
 }
 
-.index-columns{
+.index-columns {
   color: #000000;
 
-  background-color: #ebe8e5;
+  background-color: #f8f5f2;
+  background-image: url("../img/pattern-light.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
 }
 
-.index-columns h2{
+.index-columns h2 {
   font-size: 30px;
   line-height: 42px;
 }
 
-.news-items{
+.news-items {
   list-style: none;
 }
 
-.news-items time{
+.news-items time {
   text-transform: none;
 }
 
 
-.button{
+.button {
   font: inherit;
+
+  text-align: center;
+  vertical-align: middle;
   text-transform: uppercase;
   color: #ffffff;
 
   background-color: #000000;
-  border: 0;
+  border: none;
 }
 
 .button:hover,
-.button:active{
+.button:focus,
+.button:active {
   color: #ffffff;
 
   background-color: #663b0d;
 }
 
-.gallery img{
+.gallery-content {
+
+  background-color: #5f5649;
+
   border-width: 7px;
+  border-style: solid;
   border-color: #ffffff;
 }
 
 
-.appointments input,
-.popup-login input{
-  text-transform: uppercase;
+.appointments input{
+  font: inherit;
 
-  background-color: rgba(0, 0, 0, 0);
+  background-color: transparent;
   border-width: 2px;
-  border-color: #000101;
+  border-style: solid;
+  border-color: #000000;
 }
 
-.appointments input:active,
-.appointments input:hover{
+.appointments input:focus,
+.appointments input:hover {
   border-color: #663d15;
 }
 
-.main-footer{
+.main-footer {
   color: #ffffff;
 
   background-color: #000000;
   background-image: url("../img/footer.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
 }
 
-.main-footer .footer-map,
-.popup-login a{
+.main-footer a {
+  color: #ffffff;
+}
+
+.main-footer .footer-map {
   text-decoration: underline;
 }
 
+.footer-social{
+  text-align: center;
+}
+
+.popup-login a{
+  color: #000000;
+}
+
 .main-footer .footer-map:hover,
-.popup-login a:hover{
+.main-footer .footer-map:focus {
   text-decoration: none;
 }
 
 
-.main-footer ul{
+.main-footer ul {
   list-style: none;
 }
 
-.footer-copyright .copyright-link:active,
-.footer-copyright .copyright-link:hover{
+.footer-copyright{
+  text-align: center;
+}
+
+.footer-copyright .copyright-link:focus,
+.footer-copyright .copyright-link:hover {
   color: #000000;
 
   background-color: #ffffff;
 }
 
-.popup-login{
+.popup {
   color: #000000;
 
   background-color: #f8f5f2;
+  background-image: url("../img/pattern-light.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
 }
 
-.popup-login h2{
+.popup-login h2 {
   font-size: 30px;
   line-height: 42px;
 }
 
-.popup-map{
+.popup-login input[type="text"],
+.popup-login input[type="password"] {
+  font: inherit;
+
+  text-transform: uppercase;
+  color: #000000;
+
+  background-color: #f9f6f3;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000000;
+}
+
+.popup-login input:focus,
+.popup-login input:hover {
+  border-color: #663d15;
+}
+
+.login-checkbox:hover,
+.login-checkbox:focus {
+  color: #663d15;
+}
+
+.popup-login .restore {
+  text-decoration: underline;
+}
+
+.popup-login .restore:hover,
+.popup-login .restore:focus {
+  text-decoration: none;
+}
+
+.popup-map {
   background-color: #f8f5f2;
+
+  border-width: 7px;
+  border-style: solid;
+  border-color: #ffffff;
 }
