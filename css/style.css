@@ -17,6 +17,19 @@ body {
   background-repeat: no-repeat;
 }
 
+.inner-body{
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+
+
+  background-color: #ffffff;
+  background-image: url("../img/pattern-light.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
 a {
   text-decoration: none;
 }
@@ -47,6 +60,7 @@ a {
 
   background-color: #1f1f1f;
 }
+
 
 .features-list {
   list-style: none;
@@ -226,4 +240,51 @@ a {
   border-width: 7px;
   border-style: solid;
   border-color: #ffffff;
+}
+
+/*  Для страницы shop*/
+.breadcrumbs{
+  list-style: none;
+}
+
+.container h1{
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.shop-filters-form legend{
+  font-size: 24px;
+  line-height: 30px;
+
+  border: none;
+}
+
+.shop-filters-form fieldset{
+  border: none;
+}
+
+.shop-filters-form ul{
+  list-style: none;
+}
+
+.catalog-list{
+  list-style: none;
+}
+
+.catalog-item{
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.catalog-item h3{
+  color: #000000;
+}
+
+.catalog-item .catalog-category{
+  text-transform: none;
+}
+
+.pagination-list{
+  list-style: none;
 }
