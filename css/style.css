@@ -17,6 +17,17 @@ body {
   background-repeat: no-repeat;
 }
 
+.visually-hidden {
+  position: absolute; - вырывает из контекста
+  width: 1px; - 1 на 1 пиксель, не 0, так как некоторые скринридеры такие элементы не выводят.
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .inner-page{
   font-size: 14px;
   line-height: 18px;
@@ -426,4 +437,139 @@ a {
   border-width: 2px;
   border-style: solid;
   border-color: #000000;
+}
+
+/* Стили для сетки */
+
+body > * {
+  background-color: rgba(200, 0, 0, 0.3);
+}
+
+body > * > * {
+  background-color: rgba(0, 255, 0, 0.3);
+}
+
+body > * > * > * {
+  background-color: rgba(0, 255, 255, 0.3);
+}
+
+body > * > * > * > * {
+  background-color: rgba(0, 0, 255, 0.3);
+}
+
+.main-header {
+    margin-bottom: 75px;
+}
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: transparent;
+}
+
+.header-logo {
+  order: 2;
+  width: 371px;
+  height: 155px;
+}
+
+.main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 60px;
+
+  background-color: #000000;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-navigation .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header .site-navigation {
+  width: 620px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-header .user-navigation {
+  width: 140px;
+  margin: 0;
+  padding: 0;
+}
+
+.popup {
+  display: none;
+}
+
+.main-container .features {
+  margin-bottom: 80px;
+}
+
+.main-container .features-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.features-item {
+  width: 300px;
+}
+
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 80px;
+  margin-bottom: 35px;
+}
+
+.index-columns .news {
+  width: 380px;
+}
+
+.index-columns .contacts {
+  width: 380px;
+}
+
+.index-columns .gallery {
+  width: 300px;
+}
+
+.index-columns .appointments {
+  width: 300px;
+}
+
+.main-footer {
+  margin-top: 65px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+.main-footer .container {
+  display: flex;
+}
+
+.footer-address {
+  width: 320px;
+  margin-right: 80px;
+}
+
+.footer-social {
+  width: 140px;
+}
+
+.footer-social ul {
+  width: 145px;
+  padding: 0;
+}
+
+.footer-copyright {
+  width: 150px;
+  margin-left: auto;
 }
