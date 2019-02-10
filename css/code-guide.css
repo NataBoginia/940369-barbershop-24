@@ -10,6 +10,9 @@
   /* Блочная модель */
   display: block;
   float: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100px;
   height: 100px;
   margin: 10px;
