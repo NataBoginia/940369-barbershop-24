@@ -628,3 +628,54 @@ a {
   width: 145px;
   padding: 0;
 }
+
+.page-lead {
+  display: block;
+  margin-bottom: 70px;
+}
+
+.tools-info {
+  width: 390px;
+}
+
+.tools-list {
+  margin: 0;
+  padding: 0;
+}
+
+.price-list {
+  width: 460px;
+}
+
+.price-list-table {
+  margin: 0;
+  padding: 0;
+}
+
+.shop-columns .about {
+  width: 390px;
+}
+
+.shop-columns .benefits {
+  width: 460px;
+}
+
+.price-columns {
+  margin-bottom: 65px;
+}
+
+body > * {
+  background-color: rgba(200, 0, 0, 0.3);
+}
+
+body > * > * {
+  background-color: rgba(0, 255, 0, 0.3);
+}
+
+body > * > * > * {
+  background-color: rgba(0, 255, 255, 0.3);
+}
+
+body > * > * > * > * {
+  background-color: rgba(0, 0, 255, 0.3);
+}
