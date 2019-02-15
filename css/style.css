@@ -1,4 +1,5 @@
 body {
+  min-width: 940px;
   margin: 0;
   padding: 0;
 
@@ -17,15 +18,26 @@ body {
   background-repeat: no-repeat;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
+
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
+
+  border: 0;
+  white-space: nowrap;
+
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .inner-page{
@@ -46,23 +58,27 @@ a {
 }
 
 .main-header {
-  margin-bottom: 75px;
+  margin-bottom: 70px;
 
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-
-  background-color: #000000;
 }
 
 .site-navigation,
 .user-navigation {
+  display: flex;
+  flex-wrap: wrap;
+
   list-style: none;
 }
 
 .site-navigation a,
 .user-navigation a {
+  display: block;
+
   color: #ffffff;
+  padding: 25px 20px;
 }
 
 .site-navigation a:hover,
@@ -74,41 +90,117 @@ a {
   background-color: #1f1f1f;
 }
 
+.user-navigation .login-link {
+  position: relative;
+
+  padding-left: 55px;
+}
+
+.user-navigation .login-link::before {
+  content: "";
+
+  position: absolute;
+  top: 27px;
+  left: 24px;
+
+  width: 20px;
+  height: 20px;
+
+  background-image: url("../img/login.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.user-navigation .login-link:hover::before {
+  opacity: 1;
+}
 
 .features-list {
+  padding: 0;
+  margin: 0;
+
   list-style: none;
 }
 
-.features-item{
-  text-align: center;
-}
-
 .features-list h3 {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 60px;
+  padding: 0;
+
   font-size: 30px;
   line-height: 42px;
+}
+
+.features-list h3::after{
+  content: "";
+
+  position: absolute;
+  top:55px;
+  right: 50%;
+
+  margin-right: -10px;
+
+  width: 20px;
+  height: 20px;
+
+  background-color: #ffffff;
+
+  transform: rotate(45deg);
+}
+
+.features-list p{
+  margin: 0;
+  padding: 0;
+  padding-right: 12px;
+  padding-left: 12px;
+
 }
 
 .index-columns {
   display: flex;
   justify-content: space-between;
-  padding: 50px 80px;
   margin-bottom: 35px;
+  padding-top: 45px;
+  padding-right: 80px;
+  padding-bottom: 50px;
+  padding-left: 80px;
 
   color: #000000;
 
   background-color: #f8f5f2;
-  background-image: url("../img/pattern-light.jpg");
-  background-position: 0 0;
-  background-repeat: repeat;
+  background-image:
+    url("../img/column-shadow.png"),
+    url("../img/pattern-light.jpg");
+  background-position: center, 0 0;
+  background-repeat: no-repeat, repeat;
 }
 
 .index-columns h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
   font-size: 30px;
   line-height: 42px;
 }
 
 .news-items {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+
   list-style: none;
+}
+
+.news-items li{
+  margin-bottom: 20px;
+}
+
+.index-columns p {
+  margin: 0;
+  padding: 0;
 }
 
 .news-items time {
@@ -117,6 +209,12 @@ a {
 
 
 .button {
+  display: inline-block;
+
+  box-sizing: border-box;
+  min-width: 140px;
+  padding: 10px 30px;
+
   font: inherit;
 
   text-align: center;
@@ -137,6 +235,9 @@ a {
 }
 
 .gallery-content {
+  width: 286px;
+  margin: 0;
+  padding: 0;
 
   background-color: #5f5649;
 
@@ -529,14 +630,14 @@ a {
   padding: 0;
 }
 
-.main-header .user-navigation {
-  width: 140px;
+.user-navigation {
+  width: 110px;
   margin: 0;
   padding: 0;
 }
 
 .inner-page .user-navigation {
-  margin-left:auto;
+  /* margin-left:auto; */
 }
 
 .main-container .features {
@@ -552,6 +653,8 @@ a {
 
 .features-item {
   width: 300px;
+
+  text-align: center;
 }
 
 .index-columns .news {
@@ -562,7 +665,17 @@ a {
   width: 380px;
 }
 
+.contacts p{
+  margin-bottom: 20px;
+}
+
+.contacts .button{
+  margin-right: 20px;
+}
+
 .index-columns .gallery {
+  position: relative;
+
   width: 300px;
 }
 
@@ -603,6 +716,19 @@ a {
 
 .item-gallery {
   width: 460px;
+}
+
+.gallery .button{
+  position: absolute;
+  bottom: 0;
+}
+
+.gallery .gallery-backward{
+  left: 0;
+}
+
+.gallery .gallery-forward{
+  right: 0;
 }
 
 .item-about {
@@ -678,4 +804,8 @@ body > * > * > * {
 
 body > * > * > * > * {
   background-color: rgba(0, 0, 255, 0.3);
+}
+
+body > * > * > * > * > * {
+  background-color: rgba(255, 0, 255, 0.3);
 }

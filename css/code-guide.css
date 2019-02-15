@@ -1,4 +1,15 @@
+/*
+Позиционирование
+Блочная модель
+Типографика
+Оформление
+Анимация
+Разное
+*/
+
 .declaration-order {
+  content: "";
+
   /* Позиционирование */
   position: absolute;
   top: 0;
@@ -13,10 +24,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-sizing: border-box;
   width: 100px;
+  margin-bottom: 35px;
   height: 100px;
   margin: 10px;
   padding: 10px;
+  padding-top: 45px;
+  padding-right: 80px;
+  padding-bottom: 50px;
+  padding-left: 80px;
 
   /* Типографика */
   font: normal 13px/1.5 "Arial", sans-serif;
@@ -56,4 +73,27 @@ body > * > * > * {
 
 body > * > * > * > * {
   background-color: rgba(0, 0, 255, 0.3);
+}
+
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
 }
