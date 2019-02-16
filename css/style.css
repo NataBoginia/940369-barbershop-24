@@ -213,7 +213,7 @@ a {
 
   box-sizing: border-box;
   min-width: 140px;
-  padding: 10px 30px;
+  padding: 10px 25px;
 
   font: inherit;
 
@@ -247,23 +247,10 @@ a {
 }
 
 
-.appointments input{
-  font: inherit;
-
-  background-color: transparent;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #000000;
-}
-
-.appointments input:focus,
-.appointments input:hover {
-  border-color: #663d15;
-}
 
 .main-footer {
   margin-top: 65px;
-  padding-top: 60px;
+  padding-top: 55px;
   padding-bottom: 40px;
 
   color: #ffffff;
@@ -304,7 +291,9 @@ a {
 
 .footer-copyright{
   width: 150px;
+  margin: 0;
   margin-left: auto;
+  padding: 0;
 
   text-align: center;
 }
@@ -670,7 +659,7 @@ a {
 }
 
 .contacts .button{
-  margin-right: 20px;
+  margin-right: 15px;
 }
 
 .index-columns .gallery {
@@ -681,6 +670,60 @@ a {
 
 .index-columns .appointments {
   width: 300px;
+}
+
+.appointments .button{
+  width: 100%;
+}
+
+.appointments .appointment-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  /* margin-bottom: 20px; */
+}
+
+.appointments .appointment-info {
+  margin-bottom: 10px;
+}
+
+.appointment-form .appointment-item {
+  width: 140px;
+  margin-bottom: 10px;
+}
+
+.appointment-item label {
+  display: block;
+
+  padding: 0 15px;
+  margin-bottom: 7px;
+}
+
+.appointment-item input {
+  box-sizing: border-box;
+
+  width: 140px;
+  padding-top: 8px;
+  padding-right: 15px;
+  padding-bottom: 7px;
+  padding-left: 15px;
+
+  font: inherit;
+
+  background-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000000;
+}
+
+.appointments input:focus,
+.appointments input:hover {
+  border-color: #663d15;
+}
+
+.appointment-form .button{
+  margin-top: 10px;
 }
 
 .page-title {
@@ -747,12 +790,29 @@ a {
 
 .footer-address {
   width: 320px;
+  margin: 0;
   margin-right: 80px;
+  padding: 0;
 }
 
 .footer-social ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
   width: 145px;
+  margin: 0;
   padding: 0;
+}
+
+.footer-social b {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer-social li {
+  width: 40px;
+  height: 40px;
 }
 
 .page-lead {
