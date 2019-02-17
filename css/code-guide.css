@@ -21,9 +21,9 @@
   /* Блочная модель */
   display: block;
   float: right;
-  display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   box-sizing: border-box;
   min-width: 0;
   width: 100px;
