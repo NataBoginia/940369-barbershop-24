@@ -781,71 +781,99 @@ a {
   text-decoration: underline;
 }
 /* Для прайс-листа */
-.page-lead {
-  position: relative;
 
-  display: block;
+.inner-content h2 {
+  margin-top: 60px;
+  margin-bottom: 30px;
 
-  margin-bottom: 63px;
-
-  font-size: 48px;
-  line-height: 48px;
-  padding-left: 180px;
-  padding-right: 180px;
-}
-
-.page-lead::before {
-  content: "";
-
-  position: absolute;
-  top: 25px;
-  left: 0;
-
-  width: 160px;
-  height: 2px;
-
-  background-color: #000000;
-}
-
-.page-lead::after {
-  content: "";
-
-  position: absolute;
-  top: 25px;
-  right: 0;
-
-  width: 160px;
-  height: 2px;
-
-  background-color: #000000;
-}
-
-.price-columns b {
-  display: block;
-
-  margin-bottom: 10px;
   font-size: 24px;
   line-height: 30px;
 }
 
-.price-columns p {
-  margin: 0;
-  padding: 0;
+.inner-content h3 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.inner-content h2+h3 {
+  margin-top: 30px;
+}
+
+.inner-content p {
+  margin: 14px 0;
 
   font-size: 14px;
   line-height: 24px;
 }
 
-.tools-list li {
+.inner-content li {
+  margin: 14px 0;
+
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.inner-content table {
+  border-collapse: collapse;
+}
+
+.inner-content td {
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-bottom: 11px;
+  padding-left: 16px;
+
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000000;
+}
+
+.inner-content .big-header {
+  display: flex;
+  align-items: center;
+
+  margin-top: 55px;
+  margin-bottom: 55px;
+
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+}
+
+.big-header::before,
+.big-header::after {
+  content: "";
+
+  flex-grow: 1;
+  flex-shrink: 0;
+
+  width: 50px;
+  height: 2px;
+
+  background-color: #000000;
+}
+
+.big-header::before {
+  margin-right: 20px;
+}
+.big-header::after {
+  margin-left: 20px;
+}
+
+.inner-content .custom-list-1 {
+  list-style: none;
+}
+
+.custom-list-1 li {
   position: relative;
 
-  margin-bottom: 13px;
-
-  font-size: 14px;
-  line-height: 24px;
+  padding-bottom: 10px;
 }
 
-.tools-list li::before {
+.custom-list-1 li::before {
   content: "";
 
   position: absolute;
@@ -860,26 +888,48 @@ a {
   transform: rotate(45deg);
 }
 
-.price-list-table {
+.inner-content .custom-table-1 {
   width: 100%;
-  margin: 0;
-  padding: 0;
-
-  border-collapse: collapse;
 }
 
-.price-list-table td {
-  padding-top: 10px;
-  padding-right: 5px;
-  padding-bottom: 11px;
-  padding-left: 16px;
-
-  border-width: 2px;
-  border-style: solid;
-  border-color: #000000;
+.custom-table-1 td {
+  width: 50%;
 }
 
+.custom-table-1 td:last-child {
+  text-align: center;
+}
 
+.inner-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin: 60px 0;
+}
+
+.inner-column-left,
+.inner-column-right {
+  width: 460px;
+}
+
+.inner-column-left *:first-child,
+.inner-column-right *:first-child {
+  margin-top: 0;
+}
+
+.inner-column-left *:last-child,
+.inner-column-right *:last-child {
+  margin-bottom: 0;
+}
+.inner-columns > h2:first-child {
+  width: 100%;
+  margin-top: 0;
+}
+
+.inner-columns .short-paragraph {
+  padding-right: 60px;
+}
 /* Стили для сетки с уникальными селекторами */
 
 .inner-page .main-header {
@@ -1211,11 +1261,6 @@ a {
   margin-bottom: 26px;
 }
 
-.about b {
-  padding-right: 150px;
-  margin-bottom: 26px;
-}
-
 .tools-list {
   margin: 0;
   padding: 0;
@@ -1233,16 +1278,6 @@ a {
   margin-bottom: 33px;
 }
 
-.price-columns .about {
-  width: 390px;
-}
-
-.price-columns .benefits {
-  width: 380px;
-  padding-top: 56px;
-  padding-right: 80px;
-}
-
 .price-columns {
   display: flex;
   justify-content: space-between;
@@ -1255,7 +1290,7 @@ a {
   padding-bottom: 23px;
 }
 
-body > * {
+/* body > * {
   background-color: rgba(200, 0, 0, 0.3);
 }
 
@@ -1273,4 +1308,4 @@ body > * > * > * > * {
 
 body > * > * > * > * > * {
   background-color: rgba(255, 0, 255, 0.3);
-}
+} */
