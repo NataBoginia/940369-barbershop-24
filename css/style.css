@@ -328,61 +328,6 @@ a {
   background-color: #ffffff;
 }
 
-.popup {
-  display: none;
-
-  color: #000000;
-
-  background-color: #f8f5f2;
-  background-image: url("../img/pattern-light.jpg");
-  background-position: 0 0;
-  background-repeat: repeat;
-}
-
-.popup-login h2 {
-  font-size: 30px;
-  line-height: 42px;
-}
-
-.popup-login input[type="text"],
-.popup-login input[type="password"] {
-  font: inherit;
-
-  text-transform: uppercase;
-  color: #000000;
-
-  background-color: #f9f6f3;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #000000;
-}
-
-.popup-login input:focus,
-.popup-login input:hover {
-  border-color: #663d15;
-}
-
-.login-checkbox:hover,
-.login-checkbox:focus {
-  color: #663d15;
-}
-
-.popup-login .restore {
-  text-decoration: underline;
-}
-
-.popup-login .restore:hover,
-.popup-login .restore:focus {
-  text-decoration: none;
-}
-
-.popup-map {
-  background-color: #f8f5f2;
-
-  border-width: 7px;
-  border-style: solid;
-  border-color: #ffffff;
-}
 
 /*  Для страницы shop*/
 .container h1 {
@@ -1290,7 +1235,114 @@ a {
   padding-bottom: 23px;
 }
 
-/* body > * {
+/* Поп-апы */
+
+.popup {
+  position: fixed;
+
+  left: 50%;
+  right: 50%;
+
+  display: block;
+
+  color: #000000;
+
+  background-color: #f8f5f2;
+  background-image: url("../img/pattern-light.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.popup-login {
+  top: 120px;
+
+  width: 300px;
+  margin-left: -230px;
+  padding: 50px 80px;
+}
+
+.close-popup-button {
+  position: absolute;
+  top:0;
+  right: -20px;
+
+  width: 20px;
+  height: 20px;
+
+  background-color: transparent;
+  border: none;
+  background-image: url("../img/cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 19px 19px;
+
+  cursor: pointer;
+}
+
+.popup-login h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.popup-login input[type="text"],
+.popup-login input[type="password"] {
+  font: inherit;
+
+  width: 100%;
+
+  text-transform: uppercase;
+  color: #000000;
+
+  background-color: #f9f6f3;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000000;
+}
+
+.popup-login input:focus,
+.popup-login input:hover {
+  border-color: #663d15;
+}
+
+.login-checkbox:hover,
+.login-checkbox:focus {
+  color: #663d15;
+}
+
+.popup-login .restore {
+  text-decoration: underline;
+}
+
+.popup-login .restore:hover,
+.popup-login .restore:focus {
+  text-decoration: none;
+}
+
+.popup-login .button {
+  width: 100%;
+
+  cursor: pointer;
+}
+
+.popup-map {
+  display: none;
+  top: 40px;
+
+  background-color: #f8f5f2;
+
+  width: 766px;
+  height: 560px;
+  margin-left: -383px;
+
+  border-width: 7px;
+  border-style: solid;
+  border-color: #ffffff;
+}
+
+
+/* Подсветка блоков */
+body > * {
   background-color: rgba(200, 0, 0, 0.3);
 }
 
@@ -1308,4 +1360,4 @@ body > * > * > * > * {
 
 body > * > * > * > * > * {
   background-color: rgba(255, 0, 255, 0.3);
-} */
+}
